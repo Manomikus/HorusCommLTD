@@ -1,0 +1,51 @@
+// Keyframes pour fadeInUp
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Keyframes pour pulse
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+// Mixin pour les animations
+@mixin fadeInUp-animation($duration: 1s, $delay: 0s) {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp $duration ease-out forwards;
+  animation-delay: $delay;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+}
+.fadeOut {
+  animation: fadeOut 0.8s ease forwards;
+}

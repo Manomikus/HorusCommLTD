@@ -1,0 +1,42 @@
+.services {
+  font-family: $font-heading;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap; // Permet de passer à la ligne suivante
+  background-color: rgba(0, 0, 0, 0.2);
+  gap: 0.5rem;
+
+  .service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 1rem;
+    transition: all 0.5s $animation-ease;
+    width: calc(
+      33.33% - 1rem
+    ); // Chaque item occupe environ un tiers de la largeur, ajustez selon votre espacement
+
+    &:hover {
+      filter: drop-shadow(0 0 10px $primary-color);
+    }
+
+    img {
+      width: 15vw;
+      height: 15vw;
+      object-fit: contain;
+    }
+
+    p {
+      font-family: $font-heading;
+      font-size: 1.5rem;
+      text-align: center;
+      @media screen and (max-width: 768px) {
+        font-size: 2.7vw;
+        // text-wrap: nowrap;
+      }
+    }
+  }
+}
