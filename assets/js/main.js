@@ -17,7 +17,7 @@ function enterSite() {
       loadingScreen.classList.add("fadeOut"); // Active la transition de fade-out
 
       setTimeout(() => {
-        window.location.replace("pages/about.html"); // Ou window.location.assign("pages/about.html")
+        window.location.replace("home.html"); // Ou window.location.assign("pages/about.html")
       }, 500);
     } else {
       progress += 5;

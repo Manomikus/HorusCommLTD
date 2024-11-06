@@ -101,7 +101,7 @@ button {
   background-size: cover;
   min-height: 100vh;
   display: grid;
-  grid: 10vh 1fr minmax(15vh, auto) 5vh/auto;
+  grid: 10vh 1fr minmax(17vh, auto) 5vh/auto;
 }
 
 .hidden-content .container {
@@ -169,10 +169,20 @@ header img {
 }
 
 footer {
-  font-family: "Orbitron", sans-serif;
-  text-align: center;
-  padding: 20px;
   background-color: rgba(0, 0, 0, 0.8);
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
+footer p {
+  filter: drop-shadow(0 0 10px #0e76d6);
+}
+@media screen and (max-width: 768px) {
+  footer p {
+    font-size: 2vw;
+  }
 }
 
 .loading-screen {
@@ -240,6 +250,7 @@ footer {
   flex-wrap: nowrap;
   background-color: rgba(0, 0, 0, 0.2);
   gap: 0.5rem;
+  filter: drop-shadow(0 0 10px #0e76d6);
 }
 .services .service-item {
   display: flex;
@@ -250,9 +261,6 @@ footer {
   gap: 1rem;
   transition: all 0.5s ease-in-out;
   width: calc(33.33% - 1rem);
-}
-.services .service-item:hover {
-  filter: drop-shadow(0 0 10px #0e76d6);
 }
 .services .service-item img {
   width: 15vw;
