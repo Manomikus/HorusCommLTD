@@ -27,6 +27,41 @@ function enterSite() {
     }
   }, 100);
 }
+// Header behaviour
+
+let lastScrollTop = 0;
+const header = document.getElementById("main-header");
+
+window.addEventListener("scroll", function () {
+  let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  // Gérer l'apparition du header
+  if (scrollTop < window.innerHeight && scrollTop > 0) {
+    // Le header reste caché dans le bloc hero
+    header.classList.add("hidden");
+  } else if (scrollTop > lastScrollTop && scrollTop > 100) {
+    // Scroll Down - Hide Header
+    header.classList.add("hidden");
+  } else if (scrollTop < lastScrollTop && scrollTop > window.innerHeight) {
+    // Scroll Up - Show Header
+    header.classList.remove("hidden");
+  } else if (scrollTop <= 0) {
+    // Retour à la position de départ
+    header.classList.remove("hidden");
+    header.classList.add("transparent");
+  }
+
+  // Ajuster l'opacité selon la position de défilement
+  if (scrollTop > window.innerHeight) {
+    header.classList.remove("transparent");
+    header.classList.add("translucent");
+  } else {
+    header.classList.remove("translucent");
+    header.classList.add("transparent");
+  }
+
+  lastScrollTop = scrollTop;
+});
 
 // Sélectionner le bouton toggle et le menu de navigation
 const toggleButton = document.querySelector(".toggle-button");

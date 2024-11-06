@@ -115,7 +115,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.2);
-  padding: 1rem 2rem;
+  padding: 2rem 2rem;
 }
 header ul {
   display: flex;
@@ -128,6 +128,32 @@ header a {
 }
 header img {
   max-width: 150px;
+}
+
+/* En tete  */
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  transition: background-color 0.3s, opacity 0.3s;
+}
+
+#main-header.transparent {
+  background-color: transparent;
+}
+
+#main-header.translucent {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+#main-header.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .hero {
@@ -359,47 +385,41 @@ nav.open-menu ul li {
   margin: 0;
 }
 
-.about {
-  padding: 40px;
-}
-.about h2 {
-  color: #0e76d6;
-}
-
 .hero-section {
   background: url(/assets/images/backgroundp2.png) no-repeat center center;
+  height: 100vh;
   background-size: cover;
+  display: flex;
 }
-.hero-section .hero-section-items {
-  min-height: 100vh;
+
+.hero-section-items {
+  margin: auto 2rem;
+  width: 100%;
   display: grid;
-  grid: "logo  . ." auto "box box ." 0.8fr "text text text" 1fr/50% 1fr 1fr;
+  grid: auto 1fr/auto;
+  place-self: center;
+  gap: 2vw;
 }
-.hero-section .logo {
-  grid-area: logo;
-  place-items: center;
-  place-content: center;
-}
-.hero-section .logo img {
-  margin: 2rem 0 2rem 0;
-  width: calc(60% - 1rem);
-  height: auto;
-}
-.hero-section .text-box {
-  margin-left: 2rem;
-  grid-area: box;
+.hero-section-items .title-box {
   background: #0056b3;
-  border-radius: 50px;
-  width: 90%;
-  height: 50%;
-  place-items: center;
-  place-content: center;
+  height: 8vw;
+  width: 60%;
+  border-radius: 2vw;
+  display: flex;
 }
-.hero-section .text-box h1 {
-  font-size: 4vw;
+.hero-section-items .title-box h1 {
   color: #ffffff;
-  text-wrap: nowrap;
+  margin: auto;
+  font-size: 3vw;
+  text-shadow: 10px 20px 12px rgba(0, 0, 0, 0.38);
+  filter: drop-shadow(0 0 10px #0e76d6);
 }
-.hero-section .description {
-  grid-area: text;
+.hero-section-items .text-box {
+  width: 80%;
+  place-self: center;
+}
+.hero-section-items .text-box p {
+  font-size: 1vw;
+  letter-spacing: 0.2rem;
+  text-align: justify;
 }/*# sourceMappingURL=main.css.map */

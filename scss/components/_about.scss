@@ -1,47 +1,41 @@
-.about {
-  padding: 40px;
-  h2 {
-    color: $primary-color;
-  }
-}
 .hero-section {
   background: url(/assets/images/backgroundp2.png) no-repeat center center;
+  height: 100vh;
   background-size: cover;
-  .hero-section-items {
-    min-height: 100vh;
-    display: grid;
-    grid:
-      "logo  . ." auto
-      "box box ." 0.8fr
-      "text text text" 1fr/50% 1fr 1fr;
-  }
-  .logo {
-    grid-area: logo;
-    place-items: center;
-    place-content: center;
+  display: flex;
+}
 
-    img {
-      margin: 2rem 0 2rem 0;
-      width: calc(60% - 1rem);
-      height: auto;
+.hero-section-items {
+  margin: auto 2rem;
+  width: 100%;
+  display: grid;
+  grid: auto 1fr / auto;
+  place-self: center;
+  gap: 2vw;
+  .title-box {
+    background: $hero-item-color;
+    height: 8vw;
+    width: 60%;
+    border-radius: 2vw;
+    display: flex;
+    
+    h1 {
+      color: $secondary-color;
+      margin: auto;
+      font-size: 3vw;
+      text-shadow: 10px 20px 12px rgba(0, 0, 0, 0.38);
+      filter: drop-shadow(0 0 10px $primary-color);
+     
     }
   }
   .text-box {
-    margin-left: 2rem;
-    grid-area: box;
-    background: $hero-item-color;
-    border-radius: 50px;
-    width: calc(100% - 20% / 2);
-    height: calc(100% - 100% / 2);
-    place-items: center;
-    place-content: center;
-    h1 {
-      font-size: 4vw;
-      color: $secondary-color;
-      text-wrap: nowrap;
+    
+    width: 80%;
+    place-self: center;
+    p {
+      font-size: 1vw;
+      letter-spacing: 0.2rem;
+      text-align: justify;
     }
-  }
-  .description {
-    grid-area: text;
   }
 }
