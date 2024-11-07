@@ -87,119 +87,162 @@
       </div>
     </div>
     <section class="services-section">
-      <h2>OUR SERVICES</h2>
-      <div class="services-container">
-        <div class="service-box">
-          <div class="service-icon">
+      <!-- Section Title and Icon -->
+      <div class="services-header">
+        <h2>OUR SERVICES</h2>
+        <img src="assets/images/logo-desk.png" alt="Services Icon" />
+      </div>
+
+      <!-- Services List -->
+      <div class="service-item">
+        <div class="service-header">
+          <h3>IT Solutions</h3>
+          <div class="img-item">
             <img
               src="assets/images/it-consulting-icon.png"
               alt="IT Solutions Icon"
             />
           </div>
-          <div class="service-content">
-            <h3>IT Solutions</h3>
-            <p>
-              Horus Comm Ltd offers the following:<br />
-              - IT Consulting - IT Support - CCTV - Data Backup - HAAS
-            </p>
-          </div>
         </div>
+        <p>Horus Comm Ltd offers the following:</p>
+        <ul class="service-details">
+          <li>IT Consulting</li>
+          <li>IT Support</li>
+          <li>CCTV</li>
+          <li>Data Backup</li>
+          <li>HAAS</li>
+        </ul>
+      </div>
 
-        <div class="service-box">
-          <div class="service-icon">
+      <div class="service-item">
+        <div class="service-header">
+          <h3>Cloud Solutions</h3>
+          <div class="img-item">
             <img
               src="assets/images/cloud-icon.png"
               alt="Cloud Solutions Icon"
             />
           </div>
-          <div class="service-content">
-            <h3>Cloud Solutions</h3>
-            <p>
-              Horus Comm offers the following Cloud Solutions:<br />
-              - Cloud Migration - Exchange 365 - VOIP - Hosted Solutions -
-              Managed Service
-            </p>
-          </div>
         </div>
+        <p>Horus Comm offers the following Cloud Solutions:</p>
+        <ul class="service-details">
+          <li>Cloud Migration</li>
+          <li>Exchange 365</li>
+          <li>VOIP</li>
+          <li>Hosted Solutions</li>
+          <li>Managed Service</li>
+        </ul>
+      </div>
 
-        <div class="service-box">
-          <div class="service-icon">
+      <div class="service-item">
+        <div class="service-header">
+          <h3>Network Infrastructure Solutions</h3>
+          <div class="img-item">
             <img
               src="assets/images/network-icon.png"
               alt="Network Infrastructure Icon"
             />
           </div>
-          <div class="service-content">
-            <h3>Network Infrastructure Solutions</h3>
-            <p>
-              Horus Comm offers the following Network Infrastructure
-              Solutions:<br />
-              - Data Cabling
-            </p>
-          </div>
         </div>
+        <p>Horus Comm offers the following Network infrastructure Solutions:</p>
+        <ul class="service-details">
+          <li>Data Cabling</li>
+        </ul>
+      </div>
 
-        <div class="service-box">
-          <div class="service-icon">
+      <div class="service-item">
+        <div class="service-header">
+          <h3>Apple MAC Tech Support | Windows Tech Support</h3>
+          <div class="img-item">
             <img src="assets/images/tech-icon.png" alt="Tech Support Icon" />
           </div>
-          <div class="service-content">
-            <h3>Apple MAC Tech Support | Windows Tech Support</h3>
-            <p>
-              Horus Comm Ltd offers technical support (Mac and Windows
-              maintenance, memory, hard drive upgrade, and much more)
-            </p>
-          </div>
         </div>
+        <p>Horus Comm Ltd offers technical support:</p>
+        <ul class="service-details">
+          <li>Mac and Windows maintenance</li>
+          <li>Memory and hard drive upgrade</li>
+          <li>Much more</li>
+        </ul>
+      </div>
 
-        <div class="service-box">
-          <div class="service-icon">
+      <div class="service-item">
+        <div class="service-header">
+          <h3>Wireless Solutions</h3>
+          <div class="img-item">
             <img
               src="assets/images/wireless-icon.png"
               alt="Wireless Solutions Icon"
             />
           </div>
-          <div class="service-content">
-            <h3>Wireless Solutions</h3>
-            <p>
-              Horus Comm Ltd offers the following Wireless Solutions:<br />
-              - Wireless for Offices - Wireless for Schools - Wireless for Homes
-              | Hotels
-            </p>
-          </div>
         </div>
+        <p>Horus Comm Ltd offers the following Wireless Solutions:</p>
+        <ul class="service-details">
+          <li>Wireless for Offices</li>
+          <li>Wireless for Schools</li>
+          <li>Wireless for Homes</li>
+          <li>Wireless for Hotels</li>
+        </ul>
       </div>
     </section>
 
-    <section class="contact-section">
-      <!-- Background images for the palms -->
-      <div class="palm-top-left">
-        <img src="./img/pngwing.com (6).png" alt="" />
-      </div>
-      <div class="palm-bottom-right">
-        <img src="./img/pngwing.com (5).png" alt="" />
-      </div>
-      <div class="background-contact-image"></div>
-      <div class="contact-container">
-        <h2>Let’s stay connected</h2>
-        <form class="contact-form">
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="email" name="email" placeholder="Email" required />
+    <section class="contact-form-section">
+      <h2>Let’s stay connected</h2>
+      <p>Fill out the form below and we will get back to you shortly.</p>
+
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your Full Name"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Your Email Address"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Your Phone Number"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
           <textarea
+            id="message"
             name="message"
-            placeholder="Your Inquiry ..."
-            rows="5"
+            rows="4"
+            placeholder="Your Message"
             required
           ></textarea>
-          <button class="btn-main btn-size" type="submit">Send Message</button>
-        </form>
-      </div>
+        </div>
+
+        <button type="submit" class="submit-button">Send Message</button>
+      </form>
     </section>
+
     <!-- Footer -->
     <footer class="footer-section">
       <p>&copy; 2025 Horus Comm LTD. All rights reserved.</p>
     </footer>
     <!-- JavaScript with defer attribute for improved loading -->
-    <script src="assets/js/main.js" defer></script>
+    <script src="/assets/js/main.js" defer></script>
   </body>
 </html>

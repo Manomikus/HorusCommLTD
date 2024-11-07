@@ -72,3 +72,17 @@ toggleButton.addEventListener("click", () => {
   toggleButton.classList.toggle("open"); // Active la croix sur le bouton
   nav.classList.toggle("open-menu"); // Affiche le menu
 });
+
+document
+  .querySelector(".submit-button")
+  .addEventListener("mouseenter", function () {
+    this.style.transform = "scale(1.1)";
+    this.style.boxShadow = "0px 8px 20px rgba(81, 165, 244, 0.7)";
+  });
+
+document
+  .querySelector(".submit-button")
+  .addEventListener("mouseleave", function () {
+    this.style.transform = "scale(1)";
+    this.style.boxShadow = "0px 4px 15px rgba(81, 165, 244, 0.5)";
+  });
