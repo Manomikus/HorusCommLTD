@@ -56,13 +56,12 @@ body {
   }
 
   .cards-grid {
-    margin: auto;
-    width: 70%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     place-items: center;
-    gap: 2rem;
-    padding: 2rem;
+    gap: 1rem 0;
+    padding: 2rem 0;
 
     .card-container {
       position: relative;
@@ -148,7 +147,11 @@ body {
     }
 
     @include respond-to(desktop) {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      .card-container:last-child {
+        grid-column: 1/-1;
+place-self: center;
+      }
     }
 
     @include respond-to(tablet) {

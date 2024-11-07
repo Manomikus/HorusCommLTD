@@ -441,13 +441,12 @@ body {
   filter: drop-shadow(0 0 10px #0e76d6);
 }
 .services-section .cards-grid {
-  margin: auto;
-  width: 70%;
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   place-items: center;
-  gap: 2rem;
-  padding: 2rem;
+  gap: 1rem 0;
+  padding: 2rem 0;
 }
 .services-section .cards-grid .card-container {
   position: relative;
@@ -527,7 +526,11 @@ body {
 }
 @media (max-width: 992px) {
   .services-section .cards-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .services-section .cards-grid .card-container:last-child {
+    grid-column: 1/-1;
+    place-self: center;
   }
 }
 @media (max-width: 768px) {
