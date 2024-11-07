@@ -102,19 +102,3 @@ document.querySelectorAll(".card-container").forEach((card) => {
       "0px 4px 12px rgba(0, 0, 0, 0.3)";
   });
 });
-
-// document.querySelectorAll(".card-front").forEach((card) => {
-//   card.addEventListener("mouseenter", () => {
-//     card.querySelector(".icon-front").style.transform =
-//       "translateY(-10px) scale(1.05)";
-//     card.querySelector(".card-front").style.boxShadow =
-//       "0px 8px 20px rgba(81, 165, 244, 0.5)";
-//   });
-
-//   document.querySelectorAll(".card-container").forEach((card) => {
-//     card.addEventListener("mouseenter", () => {
-//       card.querySelector(".card-front").style.transform =
-//         "translateY(-10px) scale(1.05)";
-//       card.querySelector(".card-front").style.boxShadow =
-//         "0px 8px 20px rgba(81, 165, 244, 0.5)";
-//     });

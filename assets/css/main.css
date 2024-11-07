@@ -431,22 +431,23 @@ body {
 }
 
 .services-section {
-  padding: 3rem 0;
-  text-align: center;
   color: #ffffff;
 }
 .services-section .section-title {
-  font-size: 2.5rem;
+  font-size: 4vw;
   color: #51a5f4;
   margin-bottom: 2rem;
   font-family: "Orbitron", sans-serif;
+  filter: drop-shadow(0 0 10px #0e76d6);
 }
 .services-section .cards-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin: auto;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 2rem;
 }
 .services-section .cards-grid .card-container {
   position: relative;
@@ -483,7 +484,8 @@ body {
 }
 .services-section .cards-grid .card-container .card-front:hover {
   transform: translateY(-40px);
-  filter: drop-shadow(0 0 15px #51a5f4);
+  filter: drop-shadow(0 0 10px #0e76d6);
+  filter: drop-shadow(0 0 10px #0e76d6);
 }
 .services-section .cards-grid .card-container .card-front:hover h3 {
   margin-top: 3rem;
@@ -494,10 +496,11 @@ body {
   color: #51a5f4;
 }
 .services-section .cards-grid .card-container .card-front p {
-  font-size: 1rem;
+  font-size: 1.1rem;
   letter-spacing: 0.03rem;
   line-height: 1.4rem;
   color: #ffffff;
+  font-family: "Poppins", sans-serif;
 }
 .services-section .cards-grid .card-container .icon-circle {
   position: absolute;
@@ -517,22 +520,32 @@ body {
   max-width: 100%;
   height: auto;
 }
+@media (min-width: 1200px) {
+  .services-section .cards-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 992px) {
+  .services-section .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .services-section .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .services-section .cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .services-section .services-footer {
   margin-top: 2rem;
   font-size: 1rem;
   color: #e0e0e0;
 }
 
-@media (max-width: 576px) {
-  .cards-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-  .card-container {
-    width: 90%;
-    max-width: 300px;
-  }
-}
 /* General Styles */
 .contact-form-section {
   background: rgba(14, 118, 214, 0.8);
