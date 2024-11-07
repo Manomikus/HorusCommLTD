@@ -461,9 +461,6 @@ body {
   .hero-section .hero-section-items {
     padding: 2rem;
   }
-  .hero-section .hero-section-items .title-box {
-    width: 100%;
-  }
   .hero-section .hero-section-items .title-box h1 {
     font-size: 4vw;
   }
@@ -474,10 +471,6 @@ body {
 @media (max-width: 768px) {
   .hero-section .hero-section-items {
     padding: 1.5rem;
-  }
-  .hero-section .hero-section-items .title-box {
-    width: 100%;
-    background: red;
   }
   .hero-section .hero-section-items .title-box h1 {
     font-size: 5vw;

@@ -75,8 +75,6 @@ body {
     .hero-section-items {
       padding: 2rem;
       .title-box {
-        width: 100%;
-
         h1 {
           font-size: 4vw;
         }
@@ -90,12 +88,8 @@ body {
   @include respond-to(tablet) {
     .hero-section-items {
       padding: 1.5rem;
-      .title-box {
-        width: 100%;
-        background: red;
-        h1 {
-          font-size: 5vw;
-        }
+      .title-box h1 {
+        font-size: 5vw;
       }
       .text-box p {
         font-size: 1.8vw;
