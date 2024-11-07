@@ -386,7 +386,7 @@ nav.open-menu ul li {
 }
 
 body {
-  background: url("/assets/images/background.png") no-repeat center center fixed;
+  background: url("/assets/images/background.png") no-repeat center center;
   background-size: cover;
 }
 
