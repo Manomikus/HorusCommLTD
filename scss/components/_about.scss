@@ -46,22 +46,46 @@ body {
 
 .services-section {
   color: $secondary-color;
+  padding: 2rem 5rem;
 
-  .section-title {
-    font-size: 4vw;
-    color: #51a5f4;
-    margin-bottom: 2rem;
-    font-family: $font-heading;
-    filter: drop-shadow(0 0 10px $primary-color);
+  .header-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 10rem;
+    text-wrap: nowrap;
+    @include respond-to(desktop){
+      flex-direction: column;
+      
+
+    }
+    @include respond-to(mobile){
+   text-wrap: wrap;
+   text-align: center;
+      
+
+    }
+
+    .section-title {
+      font-size: 4vw;
+      color: #51a5f4;
+      font-family: $font-heading;
+      filter: drop-shadow(0 0 10px $primary-color);
+    }
+
+    img {
+      width: 50%;
+      height: auto;
+      filter: drop-shadow(0 0 10px $primary-color);
+    }
   }
 
   .cards-grid {
-    width: 100%;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    gap: 2rem;
     place-items: center;
-    gap: 1rem 0;
-    padding: 2rem 0;
 
     .card-container {
       position: relative;
@@ -141,34 +165,33 @@ body {
         }
       }
     }
+
     // Effets responsive
     @include respond-to(large-desktop) {
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
     }
 
     @include respond-to(desktop) {
       grid-template-columns: repeat(3, 1fr);
-      // .card-container:last-child {
-      //   grid-column: 1/-1;
-      //   place-self: center;
-      // }
+      .card-container:last-child {
+        grid-column: 1/-1;
+        place-self: center;
+      }
     }
 
     @include respond-to(tablet) {
       grid-template-columns: repeat(2, 1fr);
+      .card-container:last-child {
+        grid-column: inherit;
+      }
     }
 
     @include respond-to(mobile) {
       grid-template-columns: 1fr;
     }
   }
-
-  .services-footer {
-    margin-top: 2rem;
-    font-size: 1rem;
-    color: #e0e0e0;
-  }
 }
+
 
 /* General Styles */
 .contact-form-section {
