@@ -242,17 +242,10 @@ body {
 
     @include respond-to(desktop) {
       grid-template-columns: repeat(2, 1fr);
-      .card-container:last-child {
-        grid-column: 1/-1;
-        place-self: center;
-      }
     }
 
     @include respond-to(tablet) {
       grid-template-columns: repeat(2, 1fr);
-      .card-container:last-child {
-        grid-column: inherit;
-      }
     }
 
     @include respond-to(mobile) {

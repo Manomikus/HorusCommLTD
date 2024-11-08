@@ -625,17 +625,10 @@ body {
   .services-section .cards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-  .services-section .cards-grid .card-container:last-child {
-    grid-column: 1/-1;
-    place-self: center;
-  }
 }
 @media (max-width: 768px) {
   .services-section .cards-grid {
     grid-template-columns: repeat(2, 1fr);
-  }
-  .services-section .cards-grid .card-container:last-child {
-    grid-column: inherit;
   }
 }
 @media (max-width: 576px) {
