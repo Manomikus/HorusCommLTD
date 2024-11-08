@@ -623,7 +623,7 @@ body {
 }
 @media (max-width: 1199px) {
   .services-section .cards-grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
   .services-section .cards-grid .card-container:last-child {
     grid-column: 1/-1;
