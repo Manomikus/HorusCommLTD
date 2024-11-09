@@ -310,7 +310,7 @@ footer p {
   align-items: center;
   justify-content: center;
   color: #fff;
-  gap: 1rem;
+  gap: 0.5rem 2rem;
   transition: all 0.5s ease-in-out;
   width: calc(33.33% - 1rem);
 }
@@ -492,10 +492,10 @@ body {
   transform: translateY(0);
 }
 .hero-section .particle.left {
-  left: 9.6727372566vw;
+  left: 12.4458396281vw;
 }
 .hero-section .particle.right {
-  right: 14.1547239809vw;
+  right: 13.4687035067vw;
 }
 @keyframes float {
   from {
