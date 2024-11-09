@@ -5,7 +5,10 @@
   justify-content: center;
   flex-wrap: nowrap; // Permet de passer à la ligne suivante
   background-color: rgba(0, 0, 0, 0.2);
-  gap: 0.5rem;
+  gap: 0.5rem 2rem;
+  @include respond-to(mobile) {
+    gap: 0.5rem;
+  }
   filter: drop-shadow(0 0 10px $primary-color);
 
   .service-item {
@@ -13,8 +16,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    gap: 0.5rem 2rem;
+    color: $secondary-color;
+    gap: 1rem;
     transition: all 0.5s $animation-ease;
     width: calc(
       33.33% - 1rem
