@@ -1,5 +1,8 @@
 .enter-button button {
-  font-size: 3vw;
+  font-size: 1.5vw;
+  @include respond-to(mobile){
+    font-size: 3vw;
+  }
   text-wrap: nowrap;
   @include text-dual-gradient(
     $primary-color,

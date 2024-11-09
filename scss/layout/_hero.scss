@@ -9,13 +9,19 @@
     padding: 0 1rem;
 
     .logo {
-      width: 70vw;
+      @include respond-to(mobile) {
+        width: 70vw;
+      }
+      width: 50%;
       @include fadeInUp-animation(2.5s);
       @include neon-effect($primary-color, 15px);
       height: auto;
     }
     .door {
-      width: 10vw;
+      @include respond-to(mobile) {
+        width: 10vw;
+      }
+      width: 10%;
       height: auto;
       @include fadeInUp-animation(1s, 2.5s);
       @include neon-effect($primary-color);

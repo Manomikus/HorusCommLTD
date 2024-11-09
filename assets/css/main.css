@@ -194,7 +194,7 @@ header img {
   padding: 0 1rem;
 }
 .hero .hero-content .logo {
-  width: 70vw;
+  width: 50%;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 2.5s ease-out forwards;
@@ -202,14 +202,24 @@ header img {
   filter: drop-shadow(0 0 15px #0e76d6);
   height: auto;
 }
+@media (max-width: 576px) {
+  .hero .hero-content .logo {
+    width: 70vw;
+  }
+}
 .hero .hero-content .door {
-  width: 10vw;
+  width: 10%;
   height: auto;
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp 1s ease-out forwards;
   animation-delay: 2.5s;
   filter: drop-shadow(0 0 10px #0e76d6);
+}
+@media (max-width: 576px) {
+  .hero .hero-content .door {
+    width: 10vw;
+  }
 }
 .hero .hero-content .enter-button {
   opacity: 0;
@@ -360,7 +370,7 @@ footer p {
 }
 
 .enter-button button {
-  font-size: 3vw;
+  font-size: 1.5vw;
   text-wrap: nowrap;
   background: linear-gradient(90deg, #0e76d6 50%, #ffffff 50%);
   -webkit-background-clip: text;
@@ -373,6 +383,11 @@ footer p {
   overflow: hidden;
   filter: drop-shadow(0 0 10px #0e76d6);
   transition: background-position 0.4s ease-in-out, transform 0.3s ease-in-out;
+}
+@media (max-width: 576px) {
+  .enter-button button {
+    font-size: 3vw;
+  }
 }
 .enter-button button:hover {
   background-position: 0%;
@@ -497,10 +512,10 @@ body {
   transform: translateY(0);
 }
 .hero-section .particle.left {
-  left: 5.7094437095vw;
+  left: 6.1785921146vw;
 }
 .hero-section .particle.right {
-  right: 5.511555534vw;
+  right: 5.897923299vw;
 }
 @keyframes float {
   from {
