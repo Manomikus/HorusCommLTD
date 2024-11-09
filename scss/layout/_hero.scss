@@ -19,7 +19,7 @@
     }
     .door {
       @include respond-to(mobile) {
-        width: 10vw;
+        width: 15vw;
       }
       width: 10%;
       height: auto;

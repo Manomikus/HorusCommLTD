@@ -218,7 +218,7 @@ header img {
 }
 @media (max-width: 576px) {
   .hero .hero-content .door {
-    width: 10vw;
+    width: 15vw;
   }
 }
 .hero .hero-content .enter-button {
@@ -386,7 +386,7 @@ footer p {
 }
 @media (max-width: 576px) {
   .enter-button button {
-    font-size: 3vw;
+    font-size: 4.2vw;
   }
 }
 .enter-button button:hover {
@@ -512,10 +512,10 @@ body {
   transform: translateY(0);
 }
 .hero-section .particle.left {
-  left: 6.1785921146vw;
+  left: 13.0069610284vw;
 }
 .hero-section .particle.right {
-  right: 5.897923299vw;
+  right: 11.1542880161vw;
 }
 @keyframes float {
   from {
