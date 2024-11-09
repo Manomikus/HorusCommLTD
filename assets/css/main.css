@@ -417,6 +417,7 @@ body {
   color: #ffffff;
   position: relative;
   z-index: 1;
+  filter: drop-shadow(0 0 10px #0e76d6);
 }
 .hero-section #particles-js {
   position: absolute;
@@ -438,10 +439,10 @@ body {
   transform: translateY(0);
 }
 .hero-section .particle.left {
-  left: 13.5927758996vw;
+  left: 6.9232964158vw;
 }
 .hero-section .particle.right {
-  right: 8.5810935663vw;
+  right: 10.6751669144vw;
 }
 @keyframes float {
   from {

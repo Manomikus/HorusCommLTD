@@ -16,6 +16,8 @@ body {
   color: $secondary-color;
   position: relative;
   z-index: 1;
+  filter: drop-shadow(0 0 10px $primary-color);
+  
   #particles-js {
     position: absolute;
     top: 0;
