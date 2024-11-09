@@ -66,14 +66,24 @@
   }
 }
 
-
- // Animation du dégradé
- @keyframes gradientAnimation {
+// Animation du dégradé
+@keyframes gradientAnimation {
   0% {
     background-position: 0% 50%;
   }
   100% {
     background-position: 100% 50%; // Déplacement horizontal pour bien voir l'effet de transition
   }
+}
 
+// Animation pour les particules
+@keyframes float {
+  from {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-120vh) scale(0.5);
+    opacity: 0;
+  }
 }
