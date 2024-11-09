@@ -350,6 +350,7 @@ footer p {
 @media (max-width: 576px) {
   .services .service-item p {
     font-size: 2.65vw;
+    text-wrap: nowrap;
   }
 }
 
@@ -486,10 +487,10 @@ body {
   transform: translateY(0);
 }
 .hero-section .particle.left {
-  left: 10.003964203vw;
+  left: 11.8380240208vw;
 }
 .hero-section .particle.right {
-  right: 14.5197698632vw;
+  right: 7.2778836609vw;
 }
 @keyframes float {
   from {
