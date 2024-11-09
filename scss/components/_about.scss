@@ -1,6 +1,9 @@
 // Styles de fond du body
 body {
   background: url("/assets/images/background.png") no-repeat center center fixed;
+  @include respond-to(mobile) {
+    background-position: inherit;
+  }
   background-size: cover;
 }
 

@@ -439,6 +439,11 @@ body {
   background: url("/assets/images/background.png") no-repeat center center fixed;
   background-size: cover;
 }
+@media (max-width: 576px) {
+  body {
+    background-position: inherit;
+  }
+}
 
 .hero-section {
   background: url("/assets/images/backgroundp2.png") no-repeat center center;
@@ -487,10 +492,10 @@ body {
   transform: translateY(0);
 }
 .hero-section .particle.left {
-  left: 11.8380240208vw;
+  left: 13.4726443811vw;
 }
 .hero-section .particle.right {
-  right: 7.2778836609vw;
+  right: 12.1517773055vw;
 }
 @keyframes float {
   from {
