@@ -1,4 +1,4 @@
-// Keyframes pour fadeInUp
+// Animation fade-in-up pour faire apparaître et monter un élément
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -10,7 +10,7 @@
   }
 }
 
-// Keyframes pour pulse
+// Animation pulse pour créer un effet de "battement" ou de pulsation
 @keyframes pulse {
   0%,
   100% {
@@ -21,13 +21,15 @@
   }
 }
 
-// Mixin pour les animations
+// Mixin pour l'animation fadeInUp avec durée et délai personnalisables
 @mixin fadeInUp-animation($duration: 1s, $delay: 0s) {
   opacity: 0;
   transform: translateY(20px);
   animation: fadeInUp $duration ease-out forwards;
   animation-delay: $delay;
 }
+
+// Animation fade-in pour une simple apparition en fondu
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -36,6 +38,8 @@
     opacity: 1;
   }
 }
+
+// Animation fade-out avec légère augmentation de taille pour un effet de disparition
 @keyframes fadeOut {
   0% {
     opacity: 1;
@@ -46,6 +50,30 @@
     transform: scale(1.05);
   }
 }
+
+// Classe utilitaire pour appliquer fadeOut
 .fadeOut {
   animation: fadeOut 0.8s ease forwards;
+}
+
+// Animation pour faire tourner un gradient de fond
+@keyframes rotateGradient {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+ // Animation du dégradé
+ @keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%; // Déplacement horizontal pour bien voir l'effet de transition
+  }
+
 }

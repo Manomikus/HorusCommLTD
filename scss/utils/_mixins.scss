@@ -13,7 +13,11 @@
       @content;
     }
   } @else if $breakpoint == large-desktop {
-    @media (min-width: $breakpoint-large-desktop) {
+    @media (max-width: $breakpoint-large-desktop) {
+      @content;
+    }
+  } @else if $breakpoint == extra-large-desktop {
+    @media (min-width: $breakpoint-extra-large-desktop) {
       @content;
     }
   }
@@ -41,7 +45,7 @@
 }
 
 @mixin transitionButton(
-  $property: background-position 0.4s $animation-ease, 
+  $property: background-position 0.4s $animation-ease,
   $transform: transform 0.3s ease-in-out
 ) {
   transition: $property, $transform;

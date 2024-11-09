@@ -102,3 +102,13 @@ document.querySelectorAll(".card-container").forEach((card) => {
       "0px 4px 12px rgba(0, 0, 0, 0.3)";
   });
 });
+
+// Effet de particules
+const particlesContainer = document.getElementById("particles-js");
+for (let i = 0; i < 50; i++) {
+  const particle = document.createElement("div");
+  particle.classList.add("particle");
+  particle.style.left = `${Math.random() * 100}%`;
+  particle.style.animationDuration = `${2 + Math.random() * 3}s`;
+  particlesContainer.appendChild(particle);
+}
